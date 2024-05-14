@@ -1,0 +1,35 @@
+body {
+  background: url(./wall/1347806.png);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Chinese Rocks Rg", sans-serif;
+}
+
+.title {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  column-gap: 1.6rem;
+  text-align: center;
+}
+
+.title::before,
+.title::after {
+  content: "";
+  height: 2px;
+  background-color:white;
+  display: block;
+}
+.img1 {
+  width: 100%;
+}
+.logo1 {
+  width: 100px;
+}
+.video iframe {
+  width: 100%;
+  height: 100%;
+}

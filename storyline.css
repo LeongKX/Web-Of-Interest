@@ -1,0 +1,67 @@
+body {
+  background: url(./wall/2wallpaperflare.com_wallpaper.jpg);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Chinese Rocks Rg", sans-serif;
+}
+.title {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  column-gap: 1.6rem;
+  text-align: center;
+}
+
+.title::before,
+.title::after {
+  content: "";
+  height: 2px;
+  background-color: white;
+  display: block;
+}
+div {
+  width: 100%;
+  margin: auto;
+}
+
+p {
+  border-top: 3px dashed;
+  border-color: red;
+  margin: 0;
+  padding: 30px;
+}
+
+p:nth-child(even) {
+  border-left: 3px dashed;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  margin-right: 30px;
+  padding-right: 0;
+  border-color: red;
+}
+
+p:nth-child(odd) {
+  border-right: 3px dashed;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-left: 30px;
+  padding-left: 0;
+  border-color: red;
+}
+
+p:first-child {
+  border-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+p:last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.logo1 {
+  width: 100px;
+}

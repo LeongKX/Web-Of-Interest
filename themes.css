@@ -1,0 +1,22 @@
+body {
+  background-color: black;
+  font-family: "Chinese Rocks Rg", sans-serif;
+}
+.title {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  column-gap: 1.6rem;
+  text-align: center;
+}
+
+.title::before,
+.title::after {
+  content: "";
+  height: 2px;
+  background-color: white;
+  display: block;
+}
+.logo1 {
+  width: 100px;
+}
